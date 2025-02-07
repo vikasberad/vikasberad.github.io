@@ -14,19 +14,19 @@ Through this comprehensive blog, we will explore the key methodologies, results,
 
 ![Editing a markdown file for a talk](/images/editing-talk.png)
 
-The Challenges of Traditional EHR Predictive Models
+The Data Challenge in Healthcare
 ======
 
-Traditional models require the manual extraction of structured predictor variables.
+The research, conducted by a team of scientists from Google, University of California, San Francisco, and Stanford University, proposed a radical solution: using deep learning to process entire, raw electronic health records.
+Key Innovation: Comprehensive Data Representation
+Instead of manually extracting and curating specific variables, the researchers developed a novel approach:
 
-A significant amount of clinical data, particularly from unstructured sources like clinical notes, remains unused.
-
-The labor-intensive process limits scalability and model accuracy.
-
-Rajkomar et al. addressed these challenges by adopting an entirely novel approach that bypasses the need for extensive data preprocessing.
-
-Leveraging FHIR Data Representation
+Represent patients' complete EHR records using the Fast Healthcare Interoperability Resources (FHIR) format
+Utilize neural networks that can learn complex representations directly from raw data
+Incorporate comprehensive information, including free-text clinical notes
+A Deep Learning Breakthrough
 ======
+
 The study employed the Fast Healthcare Interoperability Resources (FHIR) format to represent patient records. This approach organizes healthcare data in chronological order without the need for site-specific harmonization.
 
 Key Features of FHIR Data Representation:
