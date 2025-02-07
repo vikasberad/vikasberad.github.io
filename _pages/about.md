@@ -12,6 +12,8 @@ Rajkomar et al.'s pioneering research, Scalable and Accurate Deep Learning for E
 
 Through this comprehensive blog, we will explore the key methodologies, results, and implications of this groundbreaking research. We will discuss how the integration of deep learning with EHR systems can enhance healthcare delivery and pave the way for innovative advancements in clinical informatics.
 
+![Editing a markdown file for a talk](/images/editing-talk.png)
+
 The Challenges of Traditional EHR Predictive Models
 ======
 
