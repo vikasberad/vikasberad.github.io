@@ -1,13 +1,16 @@
 ---
 permalink: /
-title: "Scalable and Accurate Deep Learning for Electronic Health Records"
+title: "Scalable and Accurate Deep Learning for Electronic Health Records: A Comprehensive Blog"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+Predictive modeling using Electronic Health Records (EHR) data holds immense potential to revolutionize healthcare by enabling personalized medicine, improving clinical decision-making, and enhancing operational efficiencies. However, the current landscape of predictive analytics faces substantial hurdles. Traditional models require extensive preprocessing, data harmonization, and hand-curated variables, resulting in the loss of valuable clinical information and limiting their scalability.
 
-Predictive modeling using Electronic Health Records (EHR) data holds immense potential for advancing personalized medicine and enhancing healthcare outcomes. However, traditional approaches demand intensive data extraction and curation, often discarding valuable information. Rajkomar et al.'s research presents a scalable and accurate deep learning framework that directly leverages raw EHR data for clinical predictions. This blog delves into their findings, methods, and the implications for healthcare.
+Rajkomar et al.'s pioneering research, Scalable and Accurate Deep Learning for Electronic Health Records, presents a paradigm shift by proposing a novel deep learning framework that harnesses raw EHR data without manual data curation. This approach significantly outperforms traditional predictive models across multiple clinical tasks, including mortality prediction, readmission forecasting, and diagnosis inference.
+
+Through this comprehensive blog, we will explore the key methodologies, results, and implications of this groundbreaking research. We will discuss how the integration of deep learning with EHR systems can enhance healthcare delivery and pave the way for innovative advancements in clinical informatics.
 
 The Challenges of Traditional EHR Predictive Models
 ======
