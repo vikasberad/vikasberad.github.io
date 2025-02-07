@@ -7,26 +7,44 @@ redirect_from:
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+Predictive modeling using Electronic Health Records (EHR) data holds immense potential for advancing personalized medicine and enhancing healthcare outcomes. However, traditional approaches demand intensive data extraction and curation, often discarding valuable information. Rajkomar et al.'s research presents a scalable and accurate deep learning framework that directly leverages raw EHR data for clinical predictions. This blog delves into their findings, methods, and the implications for healthcare.
 
-A data-driven personal website
+The Challenges of Traditional EHR Predictive Models
 ======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+Traditional models require the manual extraction of structured predictor variables.
 
-Getting started
+A significant amount of clinical data, particularly from unstructured sources like clinical notes, remains unused.
+
+The labor-intensive process limits scalability and model accuracy.
+
+Rajkomar et al. addressed these challenges by adopting an entirely novel approach that bypasses the need for extensive data preprocessing.
+
+Leveraging FHIR Data Representation
 ======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+The study employed the Fast Healthcare Interoperability Resources (FHIR) format to represent patient records. This approach organizes healthcare data in chronological order without the need for site-specific harmonization.
 
-Site-wide configuration
+Key Features of FHIR Data Representation:
+
+Temporal Ordering: Ensures that events in a patient's timeline are accurately recorded.
+
+Comprehensive Inclusion: Incorporates structured data, free-text notes, and other clinical observations.
+
+Standardized Format: Makes it easier for models to learn from diverse data sources.
+
+Deep Learning Model Architectures
 ------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+The authors explored three neural network models to process EHR data:
+
+Recurrent Neural Networks (RNNs) with LSTM: Handle temporal dependencies in the data.
+
+Time-Aware Attention Neural Networks (TANNs): Focus on relevant time-sensitive information.
+
+Boosted Time-Based Decision Stumps: Capture binary decision rules for data partitioning.
+
+Ensemble Approach
+
+To optimize accuracy, the final predictive model combined the outputs from all three neural network architectures.
 
 Create content & metadata
 ------
