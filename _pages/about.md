@@ -24,6 +24,7 @@ Instead of manually extracting and curating specific variables, the researchers 
 Represent patients' complete EHR records using the Fast Healthcare Interoperability Resources (FHIR) format
 Utilize neural networks that can learn complex representations directly from raw data
 Incorporate comprehensive information, including free-text clinical notes
+
 A Deep Learning Breakthrough
 ======
 
