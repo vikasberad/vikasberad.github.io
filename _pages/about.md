@@ -8,7 +8,7 @@ redirect_from:
 ---
 ![Deep learning in Healthcare](/images/iStock-979576420-768x379.webp)
 
-Predictive modeling using Electronic Health Records (EHR) data holds immense potential to revolutionize healthcare by enabling personalized medicine, improving clinical decision-making, and enhancing operational efficiencies. However, the current landscape of predictive analytics faces substantial hurdles. Traditional models require extensive preprocessing, data harmonization, and hand-curated variables, resulting in the loss of valuable clinical information and limiting their scalability.
+**Predictive modeling** using Electronic Health Records (EHR) data holds immense potential to revolutionize healthcare by enabling personalized medicine, improving clinical decision-making, and enhancing operational efficiencies. However, the current landscape of predictive analytics faces substantial hurdles. Traditional models require extensive preprocessing, data harmonization, and hand-curated variables, resulting in the loss of valuable clinical information and limiting their scalability.
 
 Rajkomar et al.'s pioneering research, Scalable and Accurate Deep Learning for Electronic Health Records, presents a paradigm shift by proposing a novel deep learning framework that harnesses raw EHR data without manual data curation. This approach significantly outperforms traditional predictive models across multiple clinical tasks, including mortality prediction, readmission forecasting, and diagnosis inference.
 
