@@ -101,7 +101,7 @@ Where:
 - `ht`: Hidden state
 
 ![EHR Collection](/images/LSTM.webp)
-*Source: Medium.com: An Intuitive Expansion of LSTM(Ottavio Calzone)*
+*Source: Medium.com: An Intuitive Expansion of LSTM(Author: Ottavio Calzone)*
 
 #### **Regularization and Training**
 To prevent overfitting and stabilize training:
@@ -286,9 +286,6 @@ The calibration curves for the baseline models were evaluated for various predic
 By comparing the performance of these baseline models with the deep learning-based approaches described earlier, the research demonstrated the significant advancements that deep learning can offer, including reducing the need for extensive feature engineering while improving predictive accuracy.
 
 
-Here's the markdown for the **References** section:
-
-```markdown
 ## References
 
 1. “2016 Measure updates and specifications report: hospital-wide all-cause unplanned readmission — version 5.0”. In: Yale–New Haven Health Services Corporation/Center for Outcomes Research & Evaluation (May 2016).
