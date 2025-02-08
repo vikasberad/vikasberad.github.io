@@ -165,8 +165,8 @@ This model focused on creating interpretable binary decision rules related to cl
 - **Total Boosting Rounds:**  
   100 rounds resulted in 100,000 candidate predicates, reduced through L1 regularization.
 
-  ![EHR Collection](/images/BoostedTime.webp)
-  *Source: Your source here*
+  ![EHR Collection](/images/binary.webp)
+  *Source: Feature Generation with Gradient Boosted Decision Trees by Carlos Mougan*
 
 #### **Final Model Architecture**
 The selected predicates were embedded into a 1024-dimensional vector space and fed into a 2-layer feedforward network with **Exponential Linear Unit (ELU)** activations.
