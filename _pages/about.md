@@ -67,24 +67,10 @@ Key advantages of this representation included:
 
 ![EHR to FHIR](/images/EHRtoFHIR.png)
 
-### Deep Learning Model Architectures  
-Three neural network models were developed and trained on the EHR data to optimize prediction accuracy:  
+Deep Learning Model Architectures  
+======
 
-1. **Recurrent Neural Networks (RNNs) with Long Short-Term Memory (LSTM)**  
-   - Captured sequential dependencies in patient records over time.  
-
-2. **Time-Aware Attention Neural Networks (TANNs)**  
-   - Focused on key time-sensitive data points in a patient’s history.  
-
-3. **Boosted Time-Based Decision Stumps**  
-   - Used binary decision rules to identify critical data features.  
-
-### Model Ensembling  
-To further enhance performance, the outputs from the three neural network models were combined into an ensemble model. This strategy leveraged the strengths of each architecture for superior predictive accuracy.
-
-## Deep Learning Techniques  
-
-The study employed advanced deep learning models to process complex, sequential EHR data and generate accurate predictions. Each model architecture was designed to handle different aspects of patient records, ultimately providing a comprehensive view when combined through model ensembling.
+The study employed advanced deep learning models to process complex, sequential EHR data and generate accurate predictions. Each model architecture was designed to handle different aspects of patient records, ultimately providing a comprehensive view when combined through model ensembling. Three neural network models were developed and trained on the EHR data to optimize prediction accuracy:  
 
 ### **Recurrent Neural Networks (RNN) with Long Short-Term Memory (LSTM)**  
 RNNs are well-suited for sequential data as they maintain information from previous steps while processing new inputs. However, standard RNNs face the challenge of vanishing gradients, limiting their ability to capture long-term dependencies in data.  
