@@ -30,7 +30,7 @@ A Deep Learning Breakthrough
 
 The study employed the Fast Healthcare Interoperability Resources (FHIR) format to represent patient records. This approach organizes healthcare data in chronological order without the need for site-specific harmonization.
 
-Key Features of FHIR Data Representation:
+**Key Features of FHIR Data Representation:**
 
 Temporal Ordering: Ensures that events in a patient's timeline are accurately recorded.
 
@@ -85,20 +85,6 @@ The models were trained to predict various clinical outcomes:
 
 This innovative deep learning methodology allowed the models to learn directly from raw data, outperforming traditional models and significantly reducing the need for custom dataset creation.
 
-
-Deep Learning Model Architectures
-------
-The authors explored three neural network models to process EHR data:
-
-Recurrent Neural Networks (RNNs) with LSTM: Handle temporal dependencies in the data.
-
-Time-Aware Attention Neural Networks (TANNs): Focus on relevant time-sensitive information.
-
-Boosted Time-Based Decision Stumps: Capture binary decision rules for data partitioning.
-
-Ensemble Approach
-
-To optimize accuracy, the final predictive model combined the outputs from all three neural network architectures.
 
 For more info
 ------
