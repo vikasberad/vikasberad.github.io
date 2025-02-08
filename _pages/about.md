@@ -166,6 +166,7 @@ This model focused on creating interpretable binary decision rules related to cl
   100 rounds resulted in 100,000 candidate predicates, reduced through L1 regularization.
 
   ![EHR Collection](/images/binary.webp)
+  
   *Source: Feature Generation with Gradient Boosted Decision Trees by Carlos Mougan*
 
 #### **Final Model Architecture**
@@ -290,6 +291,15 @@ The calibration curves for the baseline models were evaluated for various predic
 
 By comparing the performance of these baseline models with the deep learning-based approaches described earlier, the research demonstrated the significant advancements that deep learning can offer, including reducing the need for extensive feature engineering while improving predictive accuracy.
 
+
+### **Final Thoughts**
+
+
+The application of deep learning to electronic health records (EHR) holds tremendous promise for transforming healthcare by enhancing predictive capabilities and improving patient outcomes. By leveraging large volumes of structured and unstructured data, deep learning models can offer more scalable and accurate predictions compared to traditional methods, assisting healthcare professionals in making timely and informed decisions.
+
+However, the widespread adoption of deep learning in healthcare is not without its challenges. Issues related to data privacy, security, and the interpretability of complex models are critical factors that must be addressed to ensure trust and accountability in AI-based systems. Additionally, the integration of deep learning models into existing healthcare workflows requires careful consideration to minimize disruptions and ensure that these models complement rather than replace clinical expertise.
+
+Looking ahead, continued advancements in deep learning techniques, as well as the expansion of high-quality EHR datasets, will further enhance the accuracy and robustness of predictive models. Collaborative efforts among healthcare providers, data scientists, and policymakers will be essential to create solutions that are ethical, transparent, and aligned with the ultimate goal of improving patient care. If these challenges are met, deep learning has the potential to reshape healthcare, making it more personalized, efficient, and ultimately, more effective in managing patient health.
 
 ## References
 
