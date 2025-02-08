@@ -32,13 +32,16 @@ The study employed the Fast Healthcare Interoperability Resources (FHIR) format 
 
 **Key Features of FHIR Data Representation:**
 
+
 Temporal Ordering: Ensures that events in a patient's timeline are accurately recorded.
 
 Comprehensive Inclusion: Incorporates structured data, free-text notes, and other clinical observations.
 
 Standardized Format: Makes it easier for models to learn from diverse data sources.
 
-## Methods  
+Methods  
+======
+
 
 To address the challenges of predictive modeling in healthcare, the researchers adopted a novel approach using deep learning algorithms on raw EHR data. Their methodology aimed to streamline the model-building process, eliminate manual data curation, and leverage the entirety of clinical records, including free-text notes. Below are the key components of their methods:
 
@@ -51,6 +54,8 @@ The study utilized de-identified EHR data from two major academic medical center
 - Laboratory results  
 - Vital signs  
 - Free-text clinical notes (UCM data only)  
+
+![EHR to FHIR](/images/EHRtoFHIR.png)
 
 ### Data Representation  
 To represent patients’ records comprehensively, the researchers adopted the Fast Healthcare Interoperability Resources (FHIR) standard. This format structures healthcare data into a chronological sequence of events, allowing the models to process all information from a patient’s record up to any given prediction point.
