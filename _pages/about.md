@@ -135,6 +135,44 @@ The models were trained to predict various clinical outcomes:
 
 This innovative deep learning methodology allowed the models to learn directly from raw data, outperforming traditional models and significantly reducing the need for custom dataset creation.
 
+Results and Performance  
+======
+
+The deep learning models achieved remarkable results, significantly outperforming traditional models in clinical outcome predictions:  
+
+### In-Hospital Mortality Prediction  
+- AUROC of **0.95** for Hospital A and **0.93** for Hospital B  
+- Predictions made **24-48 hours earlier** than traditional models  
+
+### Readmission Prediction  
+- AUROC at discharge: **0.77** (Hospital A) and **0.76** (Hospital B)  
+- Outperformed baseline models by a significant margin  
+
+### Prolonged Length of Stay Prediction  
+- Achieved AUROC of **0.86** for Hospital A and **0.85** for Hospital B  
+
+These results highlight the transformative potential of deep learning in improving healthcare delivery.  
+
+Challenges and Limitations  
+======
+
+While the study demonstrated significant advancements, certain challenges remain:  
+- **Computational Complexity:** Deep learning models require substantial computational resources.  
+- **Data Privacy:** Maintaining patient confidentiality while processing large datasets is crucial.  
+- **Generalizability:** Models trained at one institution may require adaptation to work well at another.  
+
+Further research is needed to address these issues and enhance the adoption of AI in healthcare.
+
+Future Implications  
+======
+
+The success of this research paves the way for broader integration of AI in healthcare. Future applications could include:  
+- **Real-Time Clinical Decision Support:** AI systems that assist doctors during hospital rounds.  
+- **Personalized Treatment Recommendations:** Tailoring care based on individual patient data patterns.  
+- **Predictive Hospital Management:** Better resource allocation based on AI predictions.  
+
+As healthcare continues to generate vast amounts of data, integrating deep learning models promises to unlock new levels of precision medicine.
+
 
 For more info
 ------
