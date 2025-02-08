@@ -81,7 +81,38 @@ In this study, LSTMs efficiently captured temporal dependencies in patient data,
 
 ![EHR to FHIR](/images/LSTM.webp)
 
+### **Model Design**  
+- **Embedding Sparse Features:**  
+  Sparse clinical features (e.g., medications, procedures) were embedded into `d-dimensional` vectors.  
+- **Weighted Averaging:**  
+  Features from each time step were combined into 12-hour intervals using learned weights.  
+- **Temporal Processing:**  
+  The reduced sequence of embeddings was passed to an **n-layer LSTM**, where gating mechanisms selectively retained important information.  
+
 ---
+
+#### **How It Works**  
+1. **Data Embeddings:** Sparse features from categories such as medications, procedures, and lab results were embedded into a fixed-dimensional vector (`d-dimensional embedding`).  
+2. **Weighted Averaging:** Features were averaged based on learned weights over 12-hour time steps to reduce the complexity of the input sequence.  
+3. **LSTM Processing:**  
+   - Each node in the LSTM computed a hidden state (`ht`) and a cell state (`ct`).  
+   - Gating mechanisms (forget, input, and output gates) determined what information to retain or discard.  
+   - The final hidden state was passed to an output layer for prediction.
+
+### **LSTM Gating Mechanisms**  
+1. **Forget Gate (`ft`)**: Determines what information to discard.  
+2. **Input Gate (`it`)**: Decides which new information to store.  
+3. **Output Gate (`ot`)**: Controls the information passed to the next step.  
+
+The following equations define LSTM operations:  
+```markdown
+ft = σg(Wfxt + Ufht−1 + bf)  
+it = σg(Wixt + Uiht−1 + bi)  
+ot = σg(Woxt + Uoht−1 + bo)  
+ct = ft · ct−1 + it · σc(Wcxt + Ucht−1 + bc)  
+ht = ot · σc(ct)
+
+
 
 ### **Time-Aware Attention Neural Networks (TANN)**  
 Attention mechanisms have become a cornerstone in many AI models by allowing the network to focus on the most relevant parts of the data. The **Time-Aware Attention Neural Network (TANN)** further incorporates the dimension of time to prioritize important time-sensitive events in EHR data.
