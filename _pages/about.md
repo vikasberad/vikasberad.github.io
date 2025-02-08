@@ -50,6 +50,8 @@ The study utilized de-identified EHR data from two major academic medical center
 - Vital signs  
 - Free-text clinical notes (UCM data only)  
 
+![EHR Collection](/images/EHRCollection.png)
+
 ### **Data Representation**
 To represent patients’ records comprehensively, the researchers adopted the Fast Healthcare Interoperability Resources (FHIR) standard. This format structures healthcare data into a chronological sequence of events, allowing the models to process all information from a patient’s record up to any given prediction point.
 
@@ -57,7 +59,6 @@ Key advantages of this representation included:
 - **Temporal sequencing:** Events were organized by time, enabling more accurate temporal predictions.  
 - **Comprehensive tokenization:** Each clinical event, including free-text data, was converted into a token for model input.  
 
-![EHR Collection](/images/EHRCollection.png)
 
 ![EHR to FHIR](/images/EHRtoFHIR.png)
 
