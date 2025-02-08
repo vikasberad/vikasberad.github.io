@@ -193,6 +193,7 @@ Below is a comparison of the proposed models against traditional and other advan
 This table highlights the strengths of the ensemble approach and the advantages of leveraging multiple neural architectures for EHR-based predictions.
 
 
+
 ### **Key Takeaways**
 - **RNN with LSTM:** Captured long-term dependencies in sequential data.  
 - **TANN:** Prioritized time-sensitive events, improving prediction granularity.  
@@ -200,3 +201,33 @@ This table highlights the strengths of the ensemble approach and the advantages 
 - **Ensemble:** Combined model strengths for superior clinical predictions.
 
 This multi-model approach exemplified state-of-the-art AI techniques applied to healthcare, significantly improving clinical prediction tasks.
+
+
+## Results and Performance
+
+The proposed models demonstrated remarkable performance improvements across key clinical prediction tasks. Below are the detailed results:
+
+### **1. In-Hospital Mortality Prediction**
+- **Performance:** AUROC of **0.95** for Hospital A and **0.93** for Hospital B.  
+- **Key Insight:** The models made accurate predictions **24-48 hours earlier** than traditional models, enabling timely interventions.  
+
+### **2. 30-Day Unplanned Readmission Prediction**
+- **Performance:** AUROC at discharge of **0.77** for Hospital A and **0.76** for Hospital B.  
+- **Key Insight:** Incorporating free-text notes and comprehensive EHR data improved readmission prediction accuracy over baseline models.
+
+### **3. Prolonged Length of Stay (LOS) Prediction**
+- **Performance:** Achieved AUROC of **0.86** for Hospital A and **0.85** for Hospital B.  
+- **Key Insight:** Early predictions allowed for better hospital resource allocation and discharge planning.
+
+### **4. Diagnosis Prediction**
+- **Performance:** Weighted AUROC of **0.90** for both hospitals at discharge.  
+- **Challenges:** Accurate multi-diagnosis prediction was complex due to the large number of possible ICD-9 codes.
+
+---
+
+## Key Takeaways from the Results
+- **Early Predictions:** The models consistently made predictions earlier than traditional methods, allowing proactive clinical decisions.  
+- **High Accuracy:** Significant improvements in AUROC scores across all tasks.  
+- **Improved Resource Allocation:** Enhanced predictions of length of stay and readmissions supported better hospital management strategies.
+
+These results highlight the transformative potential of deep learning models for healthcare analytics, setting a new benchmark for predictive modeling in clinical informatics.
