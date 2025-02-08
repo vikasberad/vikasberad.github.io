@@ -284,3 +284,55 @@ The calibration curves for the baseline models were evaluated for various predic
 - **Performance Comparison:** These baseline models were crucial for understanding how the deep learning models performed against standard approaches that rely on more manual feature selection.
 
 By comparing the performance of these baseline models with the deep learning-based approaches described earlier, the research demonstrated the significant advancements that deep learning can offer, including reducing the need for extensive feature engineering while improving predictive accuracy.
+
+
+Here's the markdown for the **References** section:
+
+```markdown
+## References
+
+1. “2016 Measure updates and specifications report: hospital-wide all-cause unplanned readmission — version 5.0”. In: Yale–New Haven Health Services Corporation/Center for Outcomes Research & Evaluation (May 2016).
+2. Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio. “Neural Machine Translation by Jointly Learning to Align and Translate”. In: (Sept. 2014). arXiv: 1409.0473 [cs.CL].
+3. Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio. “Neural Machine Translation by Jointly Learning to Align and Translate”. In: (Jan. 2014). arXiv: 1409.0473 [cs.CL].
+4. D W Bates et al. “Big data in health care: using analytics to identify and manage high-risk and high-cost patients”. In: Health Aff. 33.7 (2014), pp. 1123–1131.
+5. David W Bates et al. “Ten commandments for effective clinical decision support: making the practice of evidence-based medicine a reality”. In: J. Am. Med. Inform. Assoc. 10.6 (Nov. 2003), pp. 523–530.
+6. Yoshua Bengio, Aaron Courville, and Pascal Vincent. “Representation Learning: A Review and New Perspectives”. In: (June 2012). arXiv: 1206.5538 [cs.LG].
+7. Scott W Biggins et al. “Serum sodium predicts mortality in patients listed for liver transplantation”. In: Hepatology 41.1 (Jan. 2005), pp. 32–39.
+8. Ion D Bucaloiu et al. “Increased risk of death and de novo chronic kidney disease following reversible acute kidney injury”. In: Kidney Int. 81.5 (Mar. 2012), pp. 477–485.
+9. Federico Cabitza, Raffaele Rasoini, and Gian Franco Gensini. “Unintended Consequences of Machine Learning in Medicine”. In: JAMA (July 2017).
+10. Vineet Chopra and Laurence F McMahon Jr. “Redesigning hospital alarms for patient safety: alarmed and potentially dangerous”. In: JAMA 311.12 (Mar. 2014), pp. 1199–1200.
+11. CMS’ ICD-9-CM to and from ICD-10-CM and ICD-10-PCS Crosswalk or General Equivalence Mappings. http://www.nber.org/data/icd9-icd-10-cm-and-pcs-crosswalk-generalequivalence-mapping.html. Accessed: 2017-7-21.
+12. Jacques Donzé et al. “Potentially avoidable 30-day hospital readmissions in medical patients: derivation and validation of a prediction model”. In: JAMA Intern. Med. 173.8 (Apr. 2013), pp. 632–638.
+13. Jacques Donzé et al. “Potentially avoidable 30-day hospital readmissions in medical patients: derivation and validation of a prediction model”. In: JAMA Intern. Med. 173.8 (22 4 2013), pp. 632–638.
+14. Barbara J Drew et al. “Insights into the problem of alarm fatigue with physiologic monitor devices: a comprehensive observational study of consecutive intensive care unit patients”. In: PLoS One 9.10 (Oct. 2014), e110274.
+15. Gabriel J Escobar et al. “Nonelective Rehospitalizations and Postdischarge Mortality: Predictive Models Suitable for Use in Real Time”. In: Med. Care 53.11 (Nov. 2015), pp. 916–923.
+16. Andrea Frome et al. “DeViSE: A Deep Visual-Semantic Embedding Model”. In: Advances in Neural Information Processing Systems 26. Ed. by C J C Burges et al. Curran Associates, Inc., 2013, pp. 2121–2129.
+17. Benjamin A Goldstein et al. “Opportunities and challenges in developing risk prediction models with electronic health records data: a systematic review”. In: J. Am. Med. Inform. Assoc. 24.1 (Jan. 2017), pp. 198–208.
+18. Daniel Golovin et al. “Google Vizier: A Service for Black-Box Optimization”. In: Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. ACM, 2017.
+19. Ian Goodfellow, Yoshua Bengio, and Aaron Courville. Deep Learning. MIT Press, 2016.
+20. Kevin Grumbach, Catherine R Lucey, and S Claiborne Johnston. “Transforming From Centers of Learning to Learning Health Systems: The Challenge for Academic Health Centers”. In: JAMA 311.11 (Mar. 2014), pp. 1109–1110.
+21. Varun Gulshan et al. “Development and Validation of a Deep Learning Algorithm for Detection of Diabetic Retinopathy in Retinal Fundus Photographs”. In: JAMA 316.22 (Dec. 2016), pp. 2402–2410.
+22. John D Halamka and Micky Tripathi. “The HITECH Era in Retrospect”. In: N. Engl. J. Med. 377.10 (Sept. 2017), pp. 907–909.
+23. Health Level 7. http://hl7.org/fhir/. Accessed: 2017-8-3. Apr. 2017.
+24. Sepp Hochreiter and Jürgen Schmidhuber. “Long Short-Term Memory”. In: Neural Comput. 9.8 (Nov. 1997), pp. 1735–1780.
+25. P James et al. “Relation between troponin T concentration and mortality in patients presenting with an acute stroke: observational study”. In: BMJ 320.7248 (Mar. 2000), pp. 1502–1504.
+26. J Larry Jameson and Dan L Longo. “Precision medicine–personalized, problematic, and promising”. In: N. Engl. J. Med. 372.23 (June 2015), pp. 2229–2234.
+27. Paul R Kalra et al. “Hemoglobin and Change in Hemoglobin Status Predict Mortality, Cardiovascular Events, and Bleeding in Stable Coronary Artery Disease”. In: Am. J. Med. (19 1 2017).
+28. Devan Kansagara et al. “Risk prediction models for hospital readmission: a systematic review”. In: JAMA 306.15 (Oct. 2011), pp. 1688–1698.
+29. Kirsi-Maija Kaukonen et al. “Systemic inflammatory response syndrome criteria in defining severe sepsis”. In: N. Engl. J. Med. 372.17 (Apr. 2015), pp. 1629–1638.
+30. John Kellett and Arnold Kim. “Validation of an abbreviated VitalpacTM Early Warning Score (ViEWS) in 75,419 consecutive admissions to a Canadian regional hospital”. In: Resuscitation 83.3 (Mar. 2012), pp. 297–302.
+31. Lauren J Kim et al. “Cardiac troponin I predicts short-term mortality in vascular surgery patients”. In: Circulation 106.18 (29 10 2002), pp. 2366–2371.
+32. Andrew A Kramer and Jack E Zimmerman. “Assessing the calibration of mortality benchmarks in critical care: The Hosmer-Lemeshow test revisited”. In: Crit. Care Med. 35.9 (Sept. 2007), pp. 2052–2056.
+33. Harlan M Krumholz. “Big data and new knowledge in medicine: the thinking, training, and tools needed for a learning health system”. In: Health Aff. 33.7 (July 2014), pp. 1163–1170.
+34. Harlan M Krumholz, Sharon F Terry, and Joanne Waldstreicher. “Data Acquisition, Curation, and Use for a Continuously Learning Health System”. In: JAMA 316.16 (Oct. 2016), pp. 1669–1670.
+35. Jean-Philippe Lafrance and Donald R Miller. “Acute kidney injury associates with increased long-term mortality”. In: J. Am. Soc. Nephrol. 21.2 (Feb. 2010), pp. 345–352.
+36. Yann LeCun, Yoshua Bengio, and Geoffrey Hinton. “Deep learning”. In: Nature 521.7553 (May 2015), pp. 436–444.
+37. Vincent Liu et al. “Length of stay predictions: improvements through the use of automated laboratory and comorbidity variables”. In: Med. Care 48.8 (Aug. 2010), pp. 739–744.
+38. Steve Lohr. “For Big-Data Scientists, ‘Janitor Work’ Is Key Hurdle to Insights”. In: The New York Times (Aug. 2014).
+39. Mingshan Lu et al. “Systematic review of risk adjustment models of hospital length of stay (LOS)”. In: Med. Care 53.4 (Apr. 2015), pp. 355–365.
+40. Joshua C Mandel et al. “SMART on FHIR: a standards-based, interoperable apps platform for electronic health records”. In: J. Am. Med. Inform. Assoc. 23.5 (Sept. 2016), pp. 899–908.
+41. Ziad Obermeyer and Ezekiel J Emanuel. “Predicting the Future — Big Data, Machine Learning, and Clinical Medicine”. In: N. Engl. J. Med. 375.13 (2016), pp. 1216–1219.
+42. Ravi B Parikh, J Sanford Schwartz, and Amol S Navathe. “Beyond Genes and Molecules - A Precision Delivery Initiative for Precision Medicine”. In: N. Engl. J. Med. 376.17 (Apr. 2017), pp. 1609–1612.
+43. Fabian Pedregosa et al. “Scikit-learn: Machine Learning in Python”. In: J. Mach. Learn. Res. 12.Oct (2011), pp. 2825–2830.
+44. Adler Perotte et al. “Diagnosis code assignment: models and evaluation metrics”. In: J. Am. Med. Inform. Assoc. 21.2 (Mar. 2014), pp. 231–237.
+45. Gil Press. Cleaning Big Data: Most Time-Consuming, Least Enjoyable Data Science Task, Survey Says. https://www.for
