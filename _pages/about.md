@@ -7,7 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-![Deep learning in Healthcare](/images/iStock-979576420-768x379.webp)
+![Deep learning in Healthcare](/images/intro.gif)
+*Source:Computer Vision's Mind-Blowing Impact on Healthcare by Gokul Chandan*
+
 
 **Predictive modeling** using Electronic Health Records (EHR) data holds immense potential to revolutionize healthcare by enabling personalized medicine, improving clinical decision-making, and enhancing operational efficiencies. However, the current landscape of predictive analytics faces substantial hurdles. Traditional models require extensive preprocessing, data harmonization, and hand-curated variables, resulting in the loss of valuable clinical information and limiting their scalability.
 
