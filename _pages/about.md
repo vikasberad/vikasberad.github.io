@@ -211,6 +211,14 @@ This multi-model approach exemplified state-of-the-art AI techniques applied to 
 
 The proposed models demonstrated remarkable performance improvements across key clinical prediction tasks. Below are the detailed results:
 
+
+| **Prediction Task**              | **Performance**                         | **Key Insight**                                                                                       |
+|----------------------------------|-----------------------------------------|-------------------------------------------------------------------------------------------------------|
+| **In-Hospital Mortality Prediction** | AUROC: 0.95 (Hospital A), 0.93 (Hospital B) | The models made accurate predictions 24-48 hours earlier than traditional models, enabling timely interventions. |
+| **30-Day Unplanned Readmission Prediction** | AUROC at discharge: 0.77 (Hospital A), 0.76 (Hospital B) | Incorporating free-text notes and comprehensive EHR data improved readmission prediction accuracy over baseline models. |
+| **Prolonged Length of Stay (LOS) Prediction** | AUROC: 0.86 (Hospital A), 0.85 (Hospital B) | Early predictions allowed for better hospital resource allocation and discharge planning. |
+| **Diagnosis Prediction**          | Weighted AUROC: 0.90 (Both hospitals)    | Accurate multi-diagnosis prediction was complex due to the large number of possible ICD-9 codes.         |
+
 ### **1. In-Hospital Mortality Prediction**
 - **Performance:** AUROC of **0.95** for Hospital A and **0.93** for Hospital B.  
 - **Key Insight:** The models made accurate predictions **24-48 hours earlier** than traditional models, enabling timely interventions.  
