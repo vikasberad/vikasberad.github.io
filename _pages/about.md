@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 ![Deep learning in Healthcare](/images/intro.gif)
-*Source:Computer Vision's Mind-Blowing Impact on Healthcare by Gokul Chandan*
+*fig 1: Source:Computer Vision's Mind-Blowing Impact on Healthcare by Gokul Chandan*
 
 
 **Predictive modeling** using Electronic Health Records (EHR) data holds immense potential to revolutionize healthcare by enabling personalized medicine, improving clinical decision-making, and enhancing operational efficiencies. However, the current landscape of predictive analytics faces substantial hurdles. Traditional models require extensive preprocessing, data harmonization, and hand-curated variables, resulting in the loss of valuable clinical information and limiting their scalability.
@@ -53,7 +53,7 @@ The study utilized de-identified EHR data from two major academic medical center
 - Free-text clinical notes (UCM data only)  
 
 ![EHR Collection](/images/EHRCollection.png)
-*Source: Rajkomar et al., 2025, "Scalable and Accurate Deep Learning for Electronic Health Records"*
+*fig 2: Source: Rajkomar et al., 2025, "Scalable and Accurate Deep Learning for Electronic Health Records"*
 
 
 ### **Data Representation**
@@ -65,6 +65,7 @@ Key advantages of this representation included:
 
 
 ![EHR to FHIR](/images/EHRtoFHIR.png)
+*fig 3: Data Pipeline *
 
 ## Deep Learning Model Variants
 
@@ -103,7 +104,8 @@ Where:
 - `ht`: Hidden state
 
 ![EHR Collection](/images/LSTM.webp)
-*Source: Medium.com: An Intuitive Expansion of LSTM(Author: Ottavio Calzone)*
+**fig 4: Source: Rajkomar et al., 2025, "Scalable and Accurate Deep Learning for Electronic Health Records"*
+Source: Medium.com: An Intuitive Expansion of LSTM(Author: Ottavio Calzone)*
 
 ### **Regularization and Training**
 To prevent overfitting and stabilize training:
@@ -167,7 +169,8 @@ This model focused on creating interpretable binary decision rules related to cl
 
   ![EHR Collection](/images/binary.webp)
   
-  *Source: Feature Generation with Gradient Boosted Decision Trees by Carlos Mougan*
+  **fig 5: Source: Rajkomar et al., 2025, "Scalable and Accurate Deep Learning for Electronic Health Records"*
+Source: Feature Generation with Gradient Boosted Decision Trees by Carlos Mougan*
 
 ### **Final Model Architecture**
 The selected predicates were embedded into a 1024-dimensional vector space and fed into a 2-layer feedforward network with **Exponential Linear Unit (ELU)** activations.
@@ -184,7 +187,8 @@ Combining multiple models improves robustness, mitigates biases, and reduces pre
 - This ensemble approach leveraged the strengths of each architecture, achieving superior predictive accuracy across clinical tasks.
 
   ![EHR Collection](/images/Stacking-Ensemble.png)<br>
-  *Source:A Gentle Introduction to Ensemble Learning Algorithms
+  **fig 6: Source: Rajkomar et al., 2025, "Scalable and Accurate Deep Learning for Electronic Health Records"*
+Source:A Gentle Introduction to Ensemble Learning Algorithms
 By Jason Brownlee*
 ---
 
@@ -242,7 +246,8 @@ The proposed models demonstrated remarkable performance improvements across key 
 - **Challenges:** Accurate multi-diagnosis prediction was complex due to the large number of possible ICD-9 codes.
 
 ![EHR Collection](/images/TrainingSet.png)
-*Source: Rajkomar et al., 2025, "Scalable and Accurate Deep Learning for Electronic Health Records"*
+**fig 7: Source: Rajkomar et al., 2025, "Scalable and Accurate Deep Learning for Electronic Health Records"*
+Source: Rajkomar et al., 2025, "Scalable and Accurate Deep Learning for Electronic Health Records"*
 
 ---
 
@@ -254,7 +259,8 @@ The proposed models demonstrated remarkable performance improvements across key 
 These results highlight the transformative potential of deep learning models for healthcare analytics, setting a new benchmark for predictive modeling in clinical informatics.
 
 ![EHR Collection](/images/Accuracy.png)
-*Source: Rajkomar et al., 2025, "Scalable and Accurate Deep Learning for Electronic Health Records"*
+**fig 8: Source: Rajkomar et al., 2025, "Scalable and Accurate Deep Learning for Electronic Health Records"*
+Source: Rajkomar et al., 2025, "Scalable and Accurate Deep Learning for Electronic Health Records"*
 
 ## Baseline Models
 
@@ -279,7 +285,8 @@ For predicting prolonged length of stay (LOS), the researchers created a baselin
 The calibration curves for the baseline models were evaluated for various prediction tasks, with results from hospitals A and B presented for inpatient mortality, readmission, and length of stay predictions. These calibration curves allowed for an assessment of the models' accuracy and provided insights into how well the traditional models predicted the respective clinical outcomes.
 
 ![Calibration Curves](/images/image.png)
-*Source: Rajkomar et al., 2025, "Scalable and Accurate Deep Learning for Electronic Health Records"*
+**fig 9: Source: Rajkomar et al., 2025, "Scalable and Accurate Deep Learning for Electronic Health Records"*
+Source: Rajkomar et al., 2025, "Scalable and Accurate Deep Learning for Electronic Health Records"*
 
 
 ---
