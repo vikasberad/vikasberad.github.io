@@ -8,7 +8,8 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Seminar: Deep Learning for Sciences"
+title                    : "Scalable and accurate deep learning for electronic health
+records"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
