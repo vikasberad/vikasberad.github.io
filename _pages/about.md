@@ -98,6 +98,8 @@ Where:
 - `ct`: Cell state  
 - `ht`: Hidden state
 
+![EHR Collection](/images/LSTM.webp)
+
 #### **Regularization and Training**
 To prevent overfitting and stabilize training:
 - **Dropout:** Applied to embeddings and LSTM inputs.  
@@ -157,6 +159,8 @@ This model focused on creating interpretable binary decision rules related to cl
   Secondary predicates were combined to form more complex rules.  
 - **Total Boosting Rounds:**  
   100 rounds resulted in 100,000 candidate predicates, reduced through L1 regularization.
+
+  ![EHR Collection](/images/BoostedTime.webp)
 
 #### **Final Model Architecture**
 The selected predicates were embedded into a 1024-dimensional vector space and fed into a 2-layer feedforward network with **Exponential Linear Unit (ELU)** activations.
