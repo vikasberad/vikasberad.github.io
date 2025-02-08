@@ -178,6 +178,21 @@ Combining multiple models improves robustness, mitigates biases, and reduces pre
 
 ---
 
+## Model Comparison Table
+Below is a comparison of the proposed models against traditional and other advanced models.
+
+| **Model**                      | **Key Strengths**                          | **Performance Metric**      | **Interpretability**        |
+|---------------------------------|---------------------------------------------|-----------------------------|-----------------------------|
+| RNN with LSTM                  | Captures long-term dependencies           | High AUROC for mortality    | Moderate                    |
+| TANN                            | Time-sensitive event prioritization        | Improved readmission AUROC | Moderate                    |
+| Boosted Time-Series            | Interpretable binary decision rules        | Effective for lab trends    | High                        |
+| Traditional Logistic Regression | Simple, fast                               | Lower AUROC                 | High                        |
+| Gradient Boosted Trees          | Handles non-linear relationships well      | Better than logistic        | Moderate                    |
+| Deep Ensemble Model            | Combines model strengths                   | Superior across all tasks   | Moderate                    |
+
+This table highlights the strengths of the ensemble approach and the advantages of leveraging multiple neural architectures for EHR-based predictions.
+
+
 ### **Key Takeaways**
 - **RNN with LSTM:** Captured long-term dependencies in sequential data.  
 - **TANN:** Prioritized time-sensitive events, improving prediction granularity.  
