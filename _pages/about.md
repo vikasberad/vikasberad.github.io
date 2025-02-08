@@ -55,7 +55,6 @@ The study utilized de-identified EHR data from two major academic medical center
 - Vital signs  
 - Free-text clinical notes (UCM data only)  
 
-![EHR to FHIR](/images/EHRtoFHIR.png)
 
 ### Data Representation  
 To represent patients’ records comprehensively, the researchers adopted the Fast Healthcare Interoperability Resources (FHIR) standard. This format structures healthcare data into a chronological sequence of events, allowing the models to process all information from a patient’s record up to any given prediction point.
@@ -65,6 +64,8 @@ Key advantages of this representation included:
 - **Comprehensive tokenization:** Each clinical event, including free-text data, was converted into a token for model input.  
 
 ![EHR Collection](/images/EHRCollection.png)
+
+![EHR to FHIR](/images/EHRtoFHIR.png)
 
 ### Deep Learning Model Architectures  
 Three neural network models were developed and trained on the EHR data to optimize prediction accuracy:  
