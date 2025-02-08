@@ -123,6 +123,14 @@ Attention mechanisms have become a cornerstone in many AI models by allowing the
 
 This architecture allowed the model to intelligently "attend" to key moments in a patient's timeline, improving prediction accuracy for tasks like mortality and readmissions.
 
+### **Model Design**  
+1. **Embedding Sequence:**  
+   Each event in a patient's record was associated with a time delta (`∆i`).  
+2. **Attention Weights (`βi`)**  
+   Attention logits (`αi`) were computed using predefined functions and converted to weights via a softmax function:  
+   ```markdown
+   βi = e^αi / Σ e^αj
+
 ---
 
 ### **Boosted Time-Based Decision Stumps**  
@@ -183,6 +191,9 @@ The deep learning models achieved remarkable results, significantly outperformin
 - Achieved AUROC of **0.86** for Hospital A and **0.85** for Hospital B  
 
 These results highlight the transformative potential of deep learning in improving healthcare delivery.  
+
+![Boosted Time](/images/TrainingSet.png)
+
 
 Challenges and Limitations  
 ======
