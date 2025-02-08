@@ -81,6 +81,62 @@ Three neural network models were developed and trained on the EHR data to optimi
 ### Model Ensembling  
 To further enhance performance, the outputs from the three neural network models were combined into an ensemble model. This strategy leveraged the strengths of each architecture for superior predictive accuracy.
 
+## Deep Learning Techniques  
+
+The study employed advanced deep learning models to process complex, sequential EHR data and generate accurate predictions. Each model architecture was designed to handle different aspects of patient records, ultimately providing a comprehensive view when combined through model ensembling.
+
+### **Recurrent Neural Networks (RNN) with Long Short-Term Memory (LSTM)**  
+RNNs are well-suited for sequential data as they maintain information from previous steps while processing new inputs. However, standard RNNs face the challenge of vanishing gradients, limiting their ability to capture long-term dependencies in data.  
+
+To overcome this, the researchers implemented **Long Short-Term Memory (LSTM)** networks, a specialized type of RNN designed to remember important information over extended sequences. LSTMs include memory cells and gating mechanisms that decide which information to retain or forget.  
+
+In this study, LSTMs efficiently captured temporal dependencies in patient data, such as changes in vital signs, lab values, and medication administration over time.
+
+---
+
+### **Time-Aware Attention Neural Networks (TANN)**  
+Attention mechanisms have become a cornerstone in many AI models by allowing the network to focus on the most relevant parts of the data. The **Time-Aware Attention Neural Network (TANN)** further incorporates the dimension of time to prioritize important time-sensitive events in EHR data.
+
+**Key Features:**  
+- **Dynamic weighting:** Assigns higher importance to critical clinical events that occurred closer to the prediction point.
+- **Temporal flexibility:** Identifies patterns across varying timeframes, such as sudden spikes in lab values or delayed treatment effects.
+
+This architecture allowed the model to intelligently "attend" to key moments in a patient's timeline, improving prediction accuracy for tasks like mortality and readmissions.
+
+---
+
+### **Boosted Time-Based Decision Stumps**  
+Boosted decision stumps are simple models that make binary decisions based on conditions such as whether a specific lab result exceeded a threshold or whether a particular medication was administered. These decision rules are then "boosted" through an iterative process to refine predictions.
+
+**Key Capabilities:**  
+- Captures discrete, interpretable rules for clinical data.
+- Identifies non-linear relationships by partitioning data based on time-sensitive thresholds.
+
+By using time-aware decision stumps, the model effectively handled binary decision-making tasks and identified critical patterns missed by other architectures.
+
+---
+
+### **Model Ensembling**  
+To optimize predictive accuracy, the researchers combined the outputs from all three neural network models through an **ensemble approach**.  
+
+**Why Ensembling Matters:**  
+- Different models capture unique patterns in the data.  
+- Combining their predictions reduces bias and variance, leading to more robust and reliable outcomes.
+
+**Implementation:**  
+The ensemble model averaged the predictions from the LSTM, TANN, and boosted decision stumps to generate a final prediction. This technique not only improved accuracy but also ensured better generalization across different clinical prediction tasks.
+
+---
+
+### **Summary of Advantages**  
+- **LSTM:** Excellent for capturing long-term sequential dependencies in patient data.  
+- **TANN:** Focuses on key time-sensitive events for better prediction granularity.  
+- **Boosted Decision Stumps:** Simple, interpretable rules for binary decisions.  
+- **Ensemble Model:** Combines strengths of each architecture for superior performance.
+
+This multi-model approach enabled the researchers to achieve unprecedented predictive accuracy for various clinical outcomes, setting a new benchmark for AI-driven healthcare analytics.
+
+
 ### Predictive Tasks  
 The models were trained to predict various clinical outcomes:  
 - **Inpatient Mortality:** Risk of death during hospitalization.  
