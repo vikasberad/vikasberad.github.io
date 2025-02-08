@@ -33,11 +33,11 @@ The study employed the Fast Healthcare Interoperability Resources (FHIR) format 
 **Key Features of FHIR Data Representation:**
 
 
-Temporal Ordering: Ensures that events in a patient's timeline are accurately recorded.
+**Temporal Ordering:** Ensures that events in a patient's timeline are accurately recorded.
 
-Comprehensive Inclusion: Incorporates structured data, free-text notes, and other clinical observations.
+**Comprehensive Inclusion:** Incorporates structured data, free-text notes, and other clinical observations.
 
-Standardized Format: Makes it easier for models to learn from diverse data sources.
+**Standardized Format:** Makes it easier for models to learn from diverse data sources.
 
 Methods  
 ======
