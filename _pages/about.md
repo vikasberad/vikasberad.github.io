@@ -51,6 +51,7 @@ The study utilized de-identified EHR data from two major academic medical center
 - Free-text clinical notes (UCM data only)  
 
 ![EHR Collection](/images/EHRCollection.png)
+*Source: Your source here*
 
 ### **Data Representation**
 To represent patients’ records comprehensively, the researchers adopted the Fast Healthcare Interoperability Resources (FHIR) standard. This format structures healthcare data into a chronological sequence of events, allowing the models to process all information from a patient’s record up to any given prediction point.
@@ -99,6 +100,7 @@ Where:
 - `ht`: Hidden state
 
 ![EHR Collection](/images/LSTM.webp)
+*Source: Your source here*
 
 #### **Regularization and Training**
 To prevent overfitting and stabilize training:
@@ -161,6 +163,7 @@ This model focused on creating interpretable binary decision rules related to cl
   100 rounds resulted in 100,000 candidate predicates, reduced through L1 regularization.
 
   ![EHR Collection](/images/BoostedTime.webp)
+  *Source: Your source here*
 
 #### **Final Model Architecture**
 The selected predicates were embedded into a 1024-dimensional vector space and fed into a 2-layer feedforward network with **Exponential Linear Unit (ELU)** activations.
