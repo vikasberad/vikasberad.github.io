@@ -79,6 +79,8 @@ To overcome this, the researchers implemented **Long Short-Term Memory (LSTM)** 
 
 In this study, LSTMs efficiently captured temporal dependencies in patient data, such as changes in vital signs, lab values, and medication administration over time.
 
+![EHR to FHIR](/images/LSTM.webp)
+
 ---
 
 ### **Time-Aware Attention Neural Networks (TANN)**  
