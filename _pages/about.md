@@ -183,7 +183,7 @@ Combining multiple models improves robustness, mitigates biases, and reduces pre
 - The predictions from the RNN with LSTM, TANN, and Boosted Time-Series models were averaged to create the final prediction.  
 - This ensemble approach leveraged the strengths of each architecture, achieving superior predictive accuracy across clinical tasks.
 
-  ![EHR Collection](/images/Stacking-Ensemble.png)
+  ![EHR Collection](/images/Stacking-Ensemble.png)<br>
   *Source:A Gentle Introduction to Ensemble Learning Algorithms
 By Jason Brownlee*
 ---
