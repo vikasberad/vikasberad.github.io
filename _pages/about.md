@@ -51,7 +51,8 @@ The study utilized de-identified EHR data from two major academic medical center
 - Free-text clinical notes (UCM data only)  
 
 ![EHR Collection](/images/EHRCollection.png)
-*Source: Your source here*
+*Source: Rajkomar et al., 2025, "Scalable and Accurate Deep Learning for Electronic Health Records"*
+
 
 ### **Data Representation**
 To represent patients’ records comprehensively, the researchers adopted the Fast Healthcare Interoperability Resources (FHIR) standard. This format structures healthcare data into a chronological sequence of events, allowing the models to process all information from a patient’s record up to any given prediction point.
@@ -226,6 +227,9 @@ The proposed models demonstrated remarkable performance improvements across key 
 - **Performance:** Weighted AUROC of **0.90** for both hospitals at discharge.  
 - **Challenges:** Accurate multi-diagnosis prediction was complex due to the large number of possible ICD-9 codes.
 
+![EHR Collection](/images/TrainingSet.png)
+*Source: Rajkomar et al., 2025, "Scalable and Accurate Deep Learning for Electronic Health Records"*
+
 ---
 
 ## Key Takeaways from the Results
@@ -234,6 +238,9 @@ The proposed models demonstrated remarkable performance improvements across key 
 - **Improved Resource Allocation:** Enhanced predictions of length of stay and readmissions supported better hospital management strategies.
 
 These results highlight the transformative potential of deep learning models for healthcare analytics, setting a new benchmark for predictive modeling in clinical informatics.
+
+![EHR Collection](/images/Accuracy.png)
+*Source: Rajkomar et al., 2025, "Scalable and Accurate Deep Learning for Electronic Health Records"*
 
 ## Baseline Models
 
@@ -258,6 +265,8 @@ For predicting prolonged length of stay (LOS), the researchers created a baselin
 The calibration curves for the baseline models were evaluated for various prediction tasks, with results from hospitals A and B presented for inpatient mortality, readmission, and length of stay predictions. These calibration curves allowed for an assessment of the models' accuracy and provided insights into how well the traditional models predicted the respective clinical outcomes.
 
 ![Calibration Curves](/images/image.png)
+*Source: Rajkomar et al., 2025, "Scalable and Accurate Deep Learning for Electronic Health Records"*
+
 
 ---
 
