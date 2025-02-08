@@ -59,6 +59,8 @@ Key advantages of this representation included:
 - **Temporal sequencing:** Events were organized by time, enabling more accurate temporal predictions.  
 - **Comprehensive tokenization:** Each clinical event, including free-text data, was converted into a token for model input.  
 
+![EHR Collection](/images/EHRCollection.png)
+
 ### Deep Learning Model Architectures  
 Three neural network models were developed and trained on the EHR data to optimize prediction accuracy:  
 
