@@ -72,10 +72,10 @@ To effectively harness the complexity of Electronic Health Records (EHRs) and pr
 
 ### **1. Weighted Recurrent Neural Network (RNN) with Long Short-Term Memory (LSTM)**
 
-#### **Overview**  
+### **Overview**  
 Recurrent Neural Networks (RNNs) are well-suited for sequential data such as EHRs. However, standard RNNs often fail when processing long sequences due to the vanishing gradient problem. The research team tackled this by using **Long Short-Term Memory (LSTM)** networks, which are designed to remember key information over long time sequences.
 
-#### **Model Design**
+### **Model Design**
 - **Sparse Feature Embeddings:**  
   Sparse clinical features (e.g., medications, procedures, lab values) were embedded into `d-dimensional` vectors.  
 - **Weighted Feature Averaging:**  
@@ -83,7 +83,7 @@ Recurrent Neural Networks (RNNs) are well-suited for sequential data such as EHR
 - **Temporal Processing:**  
   The reduced sequence of embeddings was passed through an **n-layer LSTM**, where each time step's information was selectively retained or discarded using gating mechanisms.
 
-#### **LSTM Gating Mechanisms**
+### **LSTM Gating Mechanisms**
 1. **Forget Gate (`ft`)**: Determines which information to discard.  
 2. **Input Gate (`it`)**: Decides which new information to store.  
 3. **Output Gate (`ot`)**: Controls the information passed to the next step.  
@@ -105,7 +105,7 @@ Where:
 ![EHR Collection](/images/LSTM.webp)
 *Source: Medium.com: An Intuitive Expansion of LSTM(Author: Ottavio Calzone)*
 
-#### **Regularization and Training**
+### **Regularization and Training**
 To prevent overfitting and stabilize training:
 - **Dropout:** Applied to embeddings and LSTM inputs.  
 - **Weight Decay:** L2 regularization penalized large weights.  
@@ -116,10 +116,10 @@ To prevent overfitting and stabilize training:
 
 ### **2. Feedforward Model with Time-Aware Attention (TANN)**
 
-#### **Overview**  
+### **Overview**  
 Attention mechanisms allow neural networks to prioritize key data points. The **Time-Aware Attention Neural Network (TANN)** incorporates the dimension of time, focusing on clinically important events close to the prediction point.
 
-#### **Model Design**
+### **Model Design**
 1. **Embedding Sequence:**  
    Each clinical event embedding (`Ei`) was associated with a time difference (`∆i`) relative to the prediction point.  
 2. **Attention Weights (`βi`)**  
@@ -130,14 +130,14 @@ Attention mechanisms allow neural networks to prioritize key data points. The **
 3. **Weighted Aggregation:**  
    The embeddings were weighted and summed, along with time-sensitive scalar values, to form the final input to the feedforward network.
 
-#### **Time Functions (`Aj`)**
+### **Time Functions (`Aj`)**
 To capture the importance of time intervals, various functions were applied:
 - **Constant (`A(∆) = 1`)**  
 - **Linear (`A(∆) = ∆`)**  
 - **Logarithmic (`A(∆) = log(∆ + 1)`)**  
 - **Piecewise Linear:** With learned slopes  
 
-#### **Training and Hyperparameters**
+### **Training and Hyperparameters**
 - Embedding dimensions (`d`) ranged from 16 to 512.  
 - Feedforward layers ranged from 1 to 3 with widths up to 512 units.  
 - Hyperparameter tuning optimized time functions and network attributes.
@@ -146,10 +146,10 @@ To capture the importance of time intervals, various functions were applied:
 
 ### **3. Boosted Embedded Time-Series Model**
 
-#### **Overview**  
+### **Overview**  
 This model focused on creating interpretable binary decision rules related to clinical events and their timing. By boosting these decision rules, the model refined predictions and identified critical features in patient data.
 
-#### **Model Design**
+### **Model Design**
 1. **Binary Decision Rules:**  
    - Example rules include:
      - "Did a lab value exceed a threshold before a specific time?"  
@@ -157,7 +157,7 @@ This model focused on creating interpretable binary decision rules related to cl
 2. **Weighted Rule Aggregation:**  
    Each rule was assigned a weight, and the weighted sum was passed through a softmax layer for prediction.
 
-#### **Boosting Process**
+### **Boosting Process**
 - **Predicate Selection:**  
   In each boosting round, 25,000 random predicates were evaluated for information gain, and the top 50 were selected.  
 - **Conjunction Rules:**  
@@ -169,17 +169,17 @@ This model focused on creating interpretable binary decision rules related to cl
   
   *Source: Feature Generation with Gradient Boosted Decision Trees by Carlos Mougan*
 
-#### **Final Model Architecture**
+### **Final Model Architecture**
 The selected predicates were embedded into a 1024-dimensional vector space and fed into a 2-layer feedforward network with **Exponential Linear Unit (ELU)** activations.
 
 ---
 
 ### **4. Model Ensembling for Optimal Performance**
 
-#### **Why Ensembling?**
+### **Why Ensembling?**
 Combining multiple models improves robustness, mitigates biases, and reduces prediction errors.
 
-#### **Implementation**
+### **Implementation**
 - The predictions from the RNN with LSTM, TANN, and Boosted Time-Series models were averaged to create the final prediction.  
 - This ensemble approach leveraged the strengths of each architecture, achieving superior predictive accuracy across clinical tasks.
 
