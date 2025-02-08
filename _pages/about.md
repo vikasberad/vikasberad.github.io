@@ -231,3 +231,36 @@ The proposed models demonstrated remarkable performance improvements across key 
 - **Improved Resource Allocation:** Enhanced predictions of length of stay and readmissions supported better hospital management strategies.
 
 These results highlight the transformative potential of deep learning models for healthcare analytics, setting a new benchmark for predictive modeling in clinical informatics.
+
+## Baseline Models
+
+To better understand the performance of the proposed deep learning models, the researchers first developed baseline models using traditional predictive modeling techniques. These baseline models were constructed by selecting commonly used features, based on recent literature, for each prediction task. These hand-engineered features were used exclusively in the baseline models, whereas the deep learning models did not require such extensive feature engineering.
+
+### **1. Mortality Baseline Model – aEWS**
+
+Most traditional models for mortality prediction rely on a small set of clinical features, such as vital signs and lab measurements. For the baseline model, the researchers followed this approach and created a model using the most recent vital signs, including systolic blood pressure, heart rate, respiratory rate, and temperature (converted to Fahrenheit for consistency). Additional lab measurements like white blood cell count, hemoglobin, sodium, creatinine, troponin, lactate, oxygen saturation, glucose, calcium, potassium, chloride, and others were also included.
+
+All values were log-transformed and standardized, with a mean of zero and standard deviation of one based on the development set for each hospital. The model also incorporated the hospital service and patient age.
+
+### **2. Readmission Baseline Model – Modified HOSPITAL Score**
+
+For readmission prediction, the team created a modified version of the HOSPITAL score. This model utilized the most recent values of sodium and hemoglobin (log-transformed and standardized), along with binary indicators for various clinical and demographic factors, such as hospital service, CPT codes during hospitalization, hospitalization length (at least 5 days), prior admissions within the past year, and admission source. The modified HOSPITAL score was designed to predict the likelihood of a 30-day unplanned readmission.
+
+### **3. Length of Stay Baseline Model – Modified Liu**
+
+For predicting prolonged length of stay (LOS), the researchers created a baseline model based on previous work involving general hospital populations. A lasso logistic regression model was constructed using variables such as age, gender, Hierarchical Condition Categories (HCC) codes from the past year, admission source, hospital service, and lab measurements from the mortality baseline model. This model aimed to predict patients likely to experience prolonged hospital stays, enabling better resource allocation.
+
+### **Calibration of Baseline Models**
+
+The calibration curves for the baseline models were evaluated for various prediction tasks, with results from hospitals A and B presented for inpatient mortality, readmission, and length of stay predictions. These calibration curves allowed for an assessment of the models' accuracy and provided insights into how well the traditional models predicted the respective clinical outcomes.
+
+![Calibration Curves](/images/image.png)
+
+---
+
+### **Key Takeaways from Baseline Models**
+- **Traditional Feature Engineering:** The baseline models relied heavily on hand-curated features, such as vital signs and lab results, to make predictions.
+- **Mortality, Readmission, and LOS Prediction:** Each baseline model targeted a different clinical task, including mortality, readmission, and length of stay, using conventional variables.
+- **Performance Comparison:** These baseline models were crucial for understanding how the deep learning models performed against standard approaches that rely on more manual feature selection.
+
+By comparing the performance of these baseline models with the deep learning-based approaches described earlier, the research demonstrated the significant advancements that deep learning can offer, including reducing the need for extensive feature engineering while improving predictive accuracy.
