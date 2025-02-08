@@ -103,7 +103,7 @@ Boosted decision stumps are simple models that make binary decisions based on co
 
 By using time-aware decision stumps, the model effectively handled binary decision-making tasks and identified critical patterns missed by other architectures.
 
----
+![Boosted Time](/images/BoostedTime.webp)
 
 ### **Model Ensembling**  
 To optimize predictive accuracy, the researchers combined the outputs from all three neural network models through an **ensemble approach**.  
