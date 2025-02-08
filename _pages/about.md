@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-![Deep learning in Healthcare](/images/intro.gif)
+![Deep learning in Healthcare](/images/intro.gif)<br>
 *fig 1: Source:Computer Vision's Mind-Blowing Impact on Healthcare by Gokul Chandan*
 
 
@@ -52,7 +52,7 @@ The study utilized de-identified EHR data from two major academic medical center
 - Vital signs  
 - Free-text clinical notes (UCM data only)  
 
-![EHR Collection](/images/EHRCollection.png)
+![EHR Collection](/images/EHRCollection.png)<br>
 *fig 2: Source: Rajkomar et al., 2025, "Scalable and Accurate Deep Learning for Electronic Health Records"*
 
 
@@ -64,7 +64,7 @@ Key advantages of this representation included:
 - **Comprehensive tokenization:** Each clinical event, including free-text data, was converted into a token for model input.  
 
 
-![EHR to FHIR](/images/EHRtoFHIR.png)
+![EHR to FHIR](/images/EHRtoFHIR.png)<br>
 *fig 3: Data Pipeline *
 
 ## Deep Learning Model Variants
@@ -103,7 +103,7 @@ Where:
 - `ct`: Cell state  
 - `ht`: Hidden state
 
-![EHR Collection](/images/LSTM.webp)
+![EHR Collection](/images/LSTM.webp)<br>
 **fig 4: Source: Rajkomar et al., 2025, "Scalable and Accurate Deep Learning for Electronic Health Records"*
 Source: Medium.com: An Intuitive Expansion of LSTM(Author: Ottavio Calzone)*
 
@@ -167,7 +167,7 @@ This model focused on creating interpretable binary decision rules related to cl
 - **Total Boosting Rounds:**  
   100 rounds resulted in 100,000 candidate predicates, reduced through L1 regularization.
 
-  ![EHR Collection](/images/binary.webp)
+  ![EHR Collection](/images/binary.webp)<br>
   
   **fig 5: Source: Rajkomar et al., 2025, "Scalable and Accurate Deep Learning for Electronic Health Records"*
 Source: Feature Generation with Gradient Boosted Decision Trees by Carlos Mougan*
@@ -245,7 +245,7 @@ The proposed models demonstrated remarkable performance improvements across key 
 - **Performance:** Weighted AUROC of **0.90** for both hospitals at discharge.  
 - **Challenges:** Accurate multi-diagnosis prediction was complex due to the large number of possible ICD-9 codes.
 
-![EHR Collection](/images/TrainingSet.png)
+![EHR Collection](/images/TrainingSet.png)<br>
 **fig 7: Source: Rajkomar et al., 2025, "Scalable and Accurate Deep Learning for Electronic Health Records"*
 Source: Rajkomar et al., 2025, "Scalable and Accurate Deep Learning for Electronic Health Records"*
 
@@ -258,7 +258,7 @@ Source: Rajkomar et al., 2025, "Scalable and Accurate Deep Learning for Electron
 
 These results highlight the transformative potential of deep learning models for healthcare analytics, setting a new benchmark for predictive modeling in clinical informatics.
 
-![EHR Collection](/images/Accuracy.png)
+![EHR Collection](/images/Accuracy.png)<br>
 **fig 8: Source: Rajkomar et al., 2025, "Scalable and Accurate Deep Learning for Electronic Health Records"*
 Source: Rajkomar et al., 2025, "Scalable and Accurate Deep Learning for Electronic Health Records"*
 
@@ -284,7 +284,7 @@ For predicting prolonged length of stay (LOS), the researchers created a baselin
 
 The calibration curves for the baseline models were evaluated for various prediction tasks, with results from hospitals A and B presented for inpatient mortality, readmission, and length of stay predictions. These calibration curves allowed for an assessment of the models' accuracy and provided insights into how well the traditional models predicted the respective clinical outcomes.
 
-![Calibration Curves](/images/image.png)
+![Calibration Curves](/images/image.png)<br>
 **fig 9: Source: Rajkomar et al., 2025, "Scalable and Accurate Deep Learning for Electronic Health Records"*
 Source: Rajkomar et al., 2025, "Scalable and Accurate Deep Learning for Electronic Health Records"*
 
