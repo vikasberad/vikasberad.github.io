@@ -101,7 +101,7 @@ Where:
 - `ht`: Hidden state
 
 ![EHR Collection](/images/LSTM.webp)
-*Source: Your source here*
+*Source: Medium.com: An Intuitive Expansion of LSTM(Ottavio Calzone)*
 
 #### **Regularization and Training**
 To prevent overfitting and stabilize training:
